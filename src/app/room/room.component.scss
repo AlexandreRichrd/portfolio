@@ -1,0 +1,18 @@
+.room {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/images/room/bureau.gif");
+  img {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .computer {
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    cursor: pointer;
+  }
+}
