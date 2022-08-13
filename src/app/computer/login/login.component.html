@@ -1,0 +1,20 @@
+<div class="form-login d-flex d-column">
+  <div class="input-nd-btn d-flex">
+    <input type="text" [(ngModel)]="mdp" (keydown)="test($event)" />
+    <button (click)="verificationMdp()" class="btn">Connexion</button>
+  </div>
+
+  <div *ngIf="error >= 1">
+    <p>
+      <em *ngIf="error >= 1 && error <= 3">Indice:</em>
+      <em
+        *ngIf="error > 3"
+        [style]="'font-size: ' + tailleIndice.toString() + 'em;'"
+        >Le mot de passe est
+      </em>
+      <em [style]="'font-size: ' + tailleIndice.toString() + 'em;'"
+        >password</em
+      >
+    </p>
+  </div>
+</div>

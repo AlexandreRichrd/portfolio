@@ -1,18 +1,60 @@
 .room {
   height: 100vh;
   width: 100%;
-  background-image: url("../../assets/images/room/bureau.gif");
   img {
     margin: 0;
     position: absolute;
-    width: 100%;
+    height: 100%;
   }
   .computer {
     width: 20%;
-    height: 30%;
+    height: 28%;
     position: absolute;
-    top: 70%;
+    bottom: 5%;
     left: 40%;
+    cursor: pointer;
+  }
+  .freddie {
+    height: 60%;
+    top: 5%;
+    left: 4%;
+    cursor: pointer;
+  }
+  .etagere {
+    height: 20%;
+    top: 20%;
+    right: 10%;
+  }
+  .livre1 {
+    position: absolute;
+    height: 14.5%;
+    width: 1.6%;
+    top: 20%;
+    right: 27.1%;
+    cursor: pointer;
+  }
+  .livre2 {
+    position: absolute;
+    height: 14.5%;
+    width: 2%;
+    top: 20%;
+    right: 25%;
+    cursor: pointer;
+  }
+  .livre3 {
+    position: absolute;
+    height: 14.5%;
+    width: 2%;
+    top: 20%;
+    right: 23%;
+    cursor: pointer;
+  }
+  .manette {
+    position: absolute;
+    height: 9.5%;
+    width: 7.8%;
+    top: 25%;
+    right: 15%;
     cursor: pointer;
   }
 }

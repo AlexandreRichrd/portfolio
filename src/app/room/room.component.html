@@ -1,4 +1,24 @@
-<div class="room">
+<div class="room d-flex d-justify-content-center">
+  <img src="../../assets/images/room/bureau.gif" alt="" />
   <img src="../../assets/images/room/bureau.png" alt="" />
-  <div (click)="ordinateur()" class="computer d"></div>
+  <div
+    (click)="ordinateur()"
+    class="computer"
+    [routerLink]="['/computer/login']"
+  ></div>
+  <img
+    src="../../assets/images/room/decoration/freddie.png"
+    class="freddie"
+    alt="Affiche de Freddie Mercury"
+    (click)="freddie()"
+  />
+  <img
+    src="../../assets/images/room/decoration/etagere.png"
+    class="etagere"
+    alt="Une etagere contenant des livres et une manette de jeu video"
+  />
+  <div class="livre1" (click)="ocHtml()"></div>
+  <div class="livre2" (click)="ocPhp()"></div>
+  <div class="livre3" (click)="vueJs()"></div>
+  <div class="manette" (click)="gaming()"></div>
 </div>

@@ -1,0 +1,14 @@
+.desktop {
+  overflow: visible;
+  .background {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+  }
+  .barre-des-taches {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    bottom: 0;
+  }
+}

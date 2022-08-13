@@ -1,11 +1,76 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
+.btn {
+  background-color: var(--secondary);
+  color: var(--light-gray);
+  height: 4rem;
+  width: 12rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--terciery);
+  }
+
+  font-family: "Minecraft", "Courier New", Courier, monospace;
+  font-size: 2em;
+}
+
+:root {
+  --primary: #706fd3;
+  --secondary: #2c2c54;
+  --terciery: #40407a;
+  --alert: #d3706f;
+  --light-gray: #d1ccc0;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("./assets/font/Minecraft.ttf");
+}
+
+//utils
+.d-flex {
+  display: flex;
+}
+
+.d-row {
+  flex-direction: row;
+}
+
+.d-column {
+  flex-direction: column;
+}
+
+.d-justify-content-center {
+  justify-content: center;
+}
+
+.d-align-items-center {
+  align-items: center;
+}
+
+.d-gap-10 {
+  gap: 10rem;
+}
+
+.d-gap-20 {
+  gap: 20rem;
+}
+
+.d-gap-30 {
+  gap: 30rem;
+}
+
+.pt-5rem {
+  padding-top: 5rem;
+}
 //debug
 
 .d {
