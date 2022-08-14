@@ -1,4 +1,8 @@
-<div class="folder d-flex d-column d-align-items-center">
+<div
+  class="folder d-flex d-column d-align-items-center"
+  [style]="css"
+  (click)="folderRedirect()"
+>
   <img src="../../../assets/images/computer/desktop/file.png" alt="" />
-  <p>exemple</p>
+  <p>{{ nom }}</p>
 </div>

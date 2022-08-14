@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   }
 
   public test(event: any) {
-    if (event.keyCode == 13) {
+    if (event.keyCode == 13 && this.mdp != '') {
       this.error++;
       console.log(this.error);
       this.tailleIndice += 0.5;
