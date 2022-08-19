@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { DesktopComponent } from './desktop/desktop.component';
 import { FolderComponent } from './desktop/folder/folder.component';
 import { IndiceDirective } from './directives/indice.directive';
+import { IconeDirective } from './directives/icone.directive';
+import { WindowComponent } from './desktop/window/window.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { IndiceDirective } from './directives/indice.directive';
     DesktopComponent,
     FolderComponent,
     IndiceDirective,
+    IconeDirective,
+    WindowComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

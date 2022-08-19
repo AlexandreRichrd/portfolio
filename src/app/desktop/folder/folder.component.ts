@@ -1,4 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,16 +12,20 @@ import { Router } from '@angular/router';
   templateUrl: './folder.component.html',
   styleUrls: ['./folder.component.scss'],
 })
-export class FolderComponent implements OnInit {
+export class FolderComponent implements OnInit, OnChanges {
   @Input() nom: String = '';
   @Input() path?: String = '';
+  @Input() top: String = '';
+  @Input() type: String = '';
+  @Input() left?: String;
 
   public css: String = '';
+  public theTop: String = '';
+  public theLeft?: String;
 
   public folderRedirect() {
-    alert(this.path);
     if (this.nom != 'GitHub') {
-      this.router.navigate([this.path]);
+      // this.router.navigate([this.path]);
     } else {
       window.location.href = 'https://github.com/AlexandreRichrd';
     }
@@ -23,11 +33,10 @@ export class FolderComponent implements OnInit {
 
   constructor(public router: Router) {}
 
-  ngOnInit(): void {
-    if (this.nom == 'CV') {
-      this.css = 'top: 5%';
-    } else if (this.nom == 'GitHub') {
-      this.css = 'top: 20%';
-    }
+  ngOnInit(): void {}
+
+  ngOnChanges(): void {
+    this.theTop = this.top;
+    this.theLeft = this.left;
   }
 }

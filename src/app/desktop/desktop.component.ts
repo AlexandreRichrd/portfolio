@@ -7,6 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./desktop.component.scss'],
 })
 export class DesktopComponent implements OnInit {
+  public windowToogled: boolean = false;
+  public nom: String = '';
+
+  public toogleWindow(nom: String) {
+    this.nom = nom;
+    this.windowToogled = true;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

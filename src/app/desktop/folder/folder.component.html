@@ -2,7 +2,24 @@
   class="folder d-flex d-column d-align-items-center"
   [style]="css"
   (click)="folderRedirect()"
+  [appIcone]="theTop"
+  [nom]="nom"
+  [TheLeft]="left"
 >
-  <img src="../../../assets/images/computer/desktop/file.png" alt="" />
+  <img
+    *ngIf="type == 'folder'"
+    src="../../../assets/images/computer/desktop/file.png"
+    alt=""
+  />
+  <img
+    *ngIf="type == 'GitHub'"
+    src="../../../assets/images/computer/desktop/github.png"
+    alt=""
+  />
+  <img
+    *ngIf="type == 'text'"
+    src="../../../assets/images/computer/desktop/text.png"
+    alt=""
+  />
   <p>{{ nom }}</p>
 </div>
