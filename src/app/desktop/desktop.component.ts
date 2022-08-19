@@ -15,6 +15,10 @@ export class DesktopComponent implements OnInit {
     this.windowToogled = true;
   }
 
+  public closeWindow() {
+    this.windowToogled = false;
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

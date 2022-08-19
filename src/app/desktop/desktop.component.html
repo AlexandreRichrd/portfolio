@@ -22,4 +22,8 @@
 <app-folder nom="Mon jeu" top="5%" left="10%" type="folder"></app-folder>
 <app-folder nom="Contact" top="5%" type="text" left="85%"></app-folder>
 
-<app-window *ngIf="windowToogled" [nom]="nom"></app-window>
+<app-window
+  *ngIf="windowToogled"
+  [nom]="nom"
+  (crossClicked)="closeWindow()"
+></app-window>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-window',
@@ -7,8 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class WindowComponent implements OnInit {
   @Input() public nom: String = '';
+  @Output() private crossClicked: EventEmitter<boolean> =
+    new EventEmitter<boolean>();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  public close() {
+    this.crossClicked.emit(true);
+  }
 }
